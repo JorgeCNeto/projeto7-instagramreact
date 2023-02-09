@@ -1,0 +1,372 @@
+body {
+    width: 1366px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #e5e5e5;
+  }
+  
+  .barra-topo {
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 34px;
+    background-color: #ffffff;
+    width: 1366px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .barra-principal {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    margin: 0 190px 0 216px;
+  }
+  .logos {
+    display: flex;
+  }
+  .logos img {
+    width: 103px;
+    height: 29px;
+  }
+  .logo {
+    background-color: #ffffff;
+    padding-right: 11.37px;
+    margin-right: 10px;
+    border-right: 1px solid #dbdbdb;
+  }
+  .logo img {
+    width: 19.25px;
+  }
+  .pesquisar {
+    background-color: #ffffff;
+  }
+  input {
+    width: 215px;
+    height: 28px;
+    background-color: #dbdbdb;
+    color: #979797;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+  }
+  input::placeholder {
+    padding-left: 35%;
+  }
+  
+  .icones {
+  }
+  .icones img {
+    width: 16.5px;
+    margin-right: 25.5px;
+  }
+  .caixa-corpo {
+    display: flex;
+  }
+  .conteudo-principal {
+    width: 829px;
+  }
+  .stories {
+    background-color: #ffffff;
+    width: 614px;
+    height: 118px;
+    margin: 0 216px 24px 216px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    padding-top: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .story {
+    width: 66px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: center;
+    margin-right: 5px;
+    position: relative;
+  }
+  .story-foto {
+    width: 56px;
+    padding-bottom: 6px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+  }
+  .story-borda {
+    width: 66px;
+    position: relative;
+  }
+  
+  .story-foto2 {
+    width: 56px;
+    padding-bottom: 6px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    border-radius: 30px;
+  }
+  
+  .story-name {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .seta {
+    position: absolute;
+    width: 26px;
+    right: 10px;
+    top: 40px;
+    z-index: 1;
+  }
+  
+  .feed {
+    width: 614px;
+    margin: 0 216px 60px 216px;
+    border: 1px solid #dbdbdb;
+  }
+  
+  .cabeca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px;
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #efefef;
+  }
+  .reticen {
+    width: 16px;
+    height: 16px;
+  }
+  .nome {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .nome-foto {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+  }
+  .caixa-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .foto {
+    width: 612px;
+    height: 612px;
+  }
+  .baixo-feed {
+    height: 76px;
+    padding: 0 18px;
+    background-color: #ffffff;
+  }
+  .icones-feed {
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icones-feed img {
+    width: 18px;
+  }
+  .icones-esq-feed {
+    display: flex;
+  }
+  .icones-esq-feed img {
+    width: 18px;
+    margin-right: 18px;
+  }
+  .curtidas {
+    height: 38px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .curtidas img {
+    width: 20px;
+    margin-right: 5px;
+  }
+  p {
+    font-weight: 300;
+  }
+  strong {
+    font-weight: 500;
+  }
+  
+  .barra-lateral {
+    background-color: #e5e5e5;
+    width: 292px;
+    padding-left: 30px;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .foto-profile {
+    width: 56px;
+    margin-right: 17px;
+  }
+  h1 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  h2 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .sugestoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+  .p1 {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8e8e8e;
+  }
+  .p2 {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    color: #262626;
+  }
+  .sugestoes-menu {
+  }
+  .potencial {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+  }
+  .potencial div {
+    display: flex;
+  }
+  .potencial div div {
+    flex-direction: column;
+  }
+  .potencial div img {
+    width: 32px;
+    margin-right: 11px;
+  }
+  h3 {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    color: #8e8e8e;
+  }
+  .seguir {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    color: #139ef2;
+  }
+  .etc {
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 400;
+    color: #c7c7c7;
+    margin-bottom: 18px;
+  }
+  
+  @media (max-width: 935px) {
+    body {
+      max-width: 90%;
+    }
+    .barra-principal {
+      width: 100%;
+      margin: 0 20px;
+    }
+    .barra-topo {
+      width: 100%;
+    }
+  
+    .caixa-corpo {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .conteudo-principal {
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stories {
+      margin: 0 0 24px 0;
+    }
+  
+    .feed {
+      margin: 0 0 60px 0;
+    }
+    .barra-lateral {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 614px) {
+    body {
+      max-width: 80%;
+    }
+    .barra-topo {
+      width: 100%;
+      margin: 0;
+    }
+    .barra-principal {
+      width: 112%;
+      margin: 0 20px;
+    }
+    .logo {
+      border: none;
+    }
+    .insta {
+      display: none;
+    }
+    .bye {
+      display: none;
+    }
+    .caixa-corpo {
+      flex-direction: column;
+      width: 100%;
+    }
+    .conteudo-principal {
+      width: 100%;
+      margin: 0;
+    }
+    .stories {
+      background-color: #e5e5e5;
+      border: none;
+      margin: 0;
+      width: 118%;
+      padding-left: 0;
+      position: relative;
+      justify-content: space-between;
+    }
+    .story-borda {
+      width: 66px;
+      border-radius: 40px;
+    }
+  
+    .feed {
+      margin: 0 0 60px 0;
+      width: 118%;
+    }
+    .foto {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
