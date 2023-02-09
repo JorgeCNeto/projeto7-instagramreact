@@ -6,21 +6,23 @@ import BarraLateral from "./BarraLateral";
 
 export default function App (){
     return (
-        <BarraTopo />
+        <>
+            <BarraTopo />
 
-        // <div class="caixa-corpo">
-        //   <div class="conteudo-principal">
+            <div class="caixa-corpo">
+            <div class="conteudo-principal">
 
-        //     <Stories />
+                <Stories />
 
-        //     <Feed />
-        //     <Feed />
+                <Feed />
+                <Feed />
 
-        //   </div>
+            </div>
 
-        //   <BarraLateral />
+            <BarraLateral />
 
-        // </div>
+            </div>
+        </>
     )};
 
    
