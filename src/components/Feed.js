@@ -1,4 +1,4 @@
-export default Feed (props){
+export default function Feed (props) {
     return (
         <div class="feed">
           <div class="cabeca">
@@ -27,7 +27,7 @@ export default Feed (props){
             <div class="curtidas">
               <img src={props.fotoCurtida} />
               <p>
-                Curtido por <strong>{props.nomeCurtida}</strong> e
+                Curtido por <strong>{props.nomeCurtida}</strong> e&nbsp;
                 <strong>outras {props.curtidas} pessoas</strong>
               </p>
             </div>
@@ -35,4 +35,4 @@ export default Feed (props){
         </div>
 
     )
-}
+};
