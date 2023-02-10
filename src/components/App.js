@@ -14,8 +14,8 @@ export default function App (){
 
                 <Stories />
 
-                <Feed fotoPerfil="public/img/mewowed.jpg" nomePerfil="meowed" fotoPost="public/img/gatinho.png" fotoCurtida="public/img/respondeai.jpg" nomeCurtida="respondeai" curtidas="101.523" />
-                <Feed fotoPerfil="public/img/barked.jpg" nomePerfil="barked" fotoPost="public/img/lobinho.png" fotoCurtida="public/img/adorable_animals.svg" nomeCurtida="adorable_animals" curtidas="99.159" />
+                <Feed fotoPerfil="public/assets/mewowed.jpg" nomePerfil="meowed" fotoPost="public/assets/gatinho.png" fotoCurtida="public/assets/respondeai.jpg" nomeCurtida="respondeai" curtidas="101.523" />
+                <Feed fotoPerfil="public/assets/barked.jpg" nomePerfil="barked" fotoPost="public/assets/lobinho.png" fotoCurtida="public/assets/adorable_animals.svg" nomeCurtida="adorable_animals" curtidas="99.159" />
                 <Feed fotoPerfil="" nomePerfil="meowed" fotoPost="" fotoCurtida="" nomeCurtida="" curtidas="" />
 
             </div>

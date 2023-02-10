@@ -6,7 +6,7 @@ export default function BarraTopo(){
             <div class="logo">
             <ion-icon name="logo-instagram"></ion-icon>
             </div>
-            <img class="insta" src="pictures/logo.png" alt="logo do instragram"/>
+            <img class="insta" src="publick/assets/logo.png" alt="logo do instragram"/>
         </div>
         <div class="pesquisar">
             <input placeholder="Pesquisar" />
