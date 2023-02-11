@@ -4,7 +4,8 @@ export default function Post (props) {
   const [salvarFoto, setSalvarFoto] = React.useState("bookmark-outline") 
   const [like, setLike] = React.useState("heart-outline")
   const [color, setColor] = React.useState("")
-  
+  const [curtidas, setCurtidas] = React.useState(props.curtidas)
+    
   function salvamento(){
     if (salvarFoto === "bookmark-outline"){
       setSalvarFoto("bookmark")
@@ -17,15 +18,20 @@ export default function Post (props) {
     if (like === "heart-outline"){
       setLike("heart")
       setColor("danger")
-    }else {
+      setCurtidas(Number(curtidas) + 1)      
+    } else {
       setLike("heart-outline")
       setColor("")
+      setCurtidas(Number(curtidas) - 1)      
     }    
   }
 
   function gosteiFoto(){
     setLike("heart")
     setColor("danger")
+    if(like === "heart-outline"){
+      setCurtidas(Number(curtidas) + 1)
+    }   
   }
 
   return (
@@ -57,7 +63,7 @@ export default function Post (props) {
               <img src={props.fotoCurtida} />
               <p>
                 Curtido por <strong>{props.nomeCurtida}</strong> e&nbsp;
-                <strong>outras {props.curtidas} pessoas</strong>
+                <strong>outras {curtidas} pessoas</strong>
               </p>
             </div>
           </div>
