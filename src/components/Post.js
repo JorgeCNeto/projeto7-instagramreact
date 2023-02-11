@@ -1,15 +1,32 @@
 import React from 'react'
 
 export default function Post (props) {
-  // const [salvar, setSalvar] = React.userState("") 
+  const [salvarFoto, setSalvarFoto] = React.useState("bookmark-outline") 
+  const [like, setLike] = React.useState("heart-outline")
+  const [color, setColor] = React.useState("")
   
-  // function salvamento(){
-  //   if (salvar === "black"){
-  //     setSalvar("")
-  //   }else {
-  //     setSalvar("preto")
-  //   }
-  // }
+  function salvamento(){
+    if (salvarFoto === "bookmark-outline"){
+      setSalvarFoto("bookmark")
+    }else {
+      setSalvarFoto("bookmark-outline")
+    }
+  }
+
+  function gostei(){
+    if (like === "heart-outline"){
+      setLike("heart")
+      setColor("danger")
+    }else {
+      setLike("heart-outline")
+      setColor("")
+    }    
+  }
+
+  function gosteiFoto(){
+    setLike("heart")
+    setColor("danger")
+  }
 
   return (
         <div class="feed">
@@ -25,16 +42,16 @@ export default function Post (props) {
             </div>
           </div>
           <div class="caixa-foto">
-            <img class="foto" src={props.fotoPost}/>
+            <img onDoubleClick={gosteiFoto} class="foto" src={props.fotoPost}/>
           </div>
           <div class="baixo-feed">
             <div class="icones-feed">
               <div class="icones-esq-feed">
-                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon onClick={gostei} color={color} name={like}></ion-icon>
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <ion-icon name="paper-plane-outline"></ion-icon>
               </div>
-              { <ion-icon /*onClick={salvamento} class={salvar} */name="bookmark-outline"></ion-icon> }
+              { <ion-icon onClick={salvamento} name={salvarFoto}></ion-icon> }
             </div>
             <div class="curtidas">
               <img src={props.fotoCurtida} />

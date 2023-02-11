@@ -300,8 +300,8 @@ body {
     margin-bottom: 18px;
   }
 
-  .preto{
-    color: black;
+  .vermelho{
+    color: red;    
   }
   
   @media (max-width: 935px) {
