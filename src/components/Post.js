@@ -1,4 +1,4 @@
-export default function Feed (props) {
+export default function Post (props) {
     return (
         <div class="feed">
           <div class="cabeca">

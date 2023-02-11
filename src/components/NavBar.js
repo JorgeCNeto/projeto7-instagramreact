@@ -1,12 +1,12 @@
-export default function BarraTopo(){
+export default function NavBar(){
  return (
     <div class="barra-topo">
         <div class="barra-principal">
         <div class="logos">
             <div class="logo">
-            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon class="iconeInstagram" name="logo-instagram"></ion-icon>
             </div>
-            <img class="insta" src="publick/assets/logo.png" alt="logo do instragram"/>
+            <img class="insta" src="assets/logo.png" alt="instragram"/>
         </div>
         <div class="pesquisar">
             <input placeholder="Pesquisar" />
