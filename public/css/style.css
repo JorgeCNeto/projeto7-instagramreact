@@ -225,6 +225,7 @@ body {
   }
   .foto-profile {
     width: 56px;
+    height: 56px;
     margin-right: 17px;
     border-radius: 100px;
   }
@@ -297,6 +298,10 @@ body {
     font-weight: 400;
     color: #c7c7c7;
     margin-bottom: 18px;
+  }
+
+  .preto{
+    color: black;
   }
   
   @media (max-width: 935px) {

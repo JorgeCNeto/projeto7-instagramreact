@@ -1,5 +1,17 @@
+import React from 'react'
+
 export default function Post (props) {
-    return (
+  // const [salvar, setSalvar] = React.userState("") 
+  
+  // function salvamento(){
+  //   if (salvar === "black"){
+  //     setSalvar("")
+  //   }else {
+  //     setSalvar("preto")
+  //   }
+  // }
+
+  return (
         <div class="feed">
           <div class="cabeca">
             <div class="nome">
@@ -22,7 +34,7 @@ export default function Post (props) {
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <ion-icon name="paper-plane-outline"></ion-icon>
               </div>
-              <ion-icon name="bookmark-outline"></ion-icon>
+              { <ion-icon /*onClick={salvamento} class={salvar} */name="bookmark-outline"></ion-icon> }
             </div>
             <div class="curtidas">
               <img src={props.fotoCurtida} />
