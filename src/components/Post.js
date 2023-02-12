@@ -35,7 +35,7 @@ export default function Post (props) {
   }
 
   return (
-        <div class="feed">
+        <div class="feed" data-test="post">
           <div class="cabeca">
             <div class="nome">
               <div>
@@ -48,20 +48,20 @@ export default function Post (props) {
             </div>
           </div>
           <div class="caixa-foto">
-            <img onDoubleClick={gosteiFoto} class="foto" src={props.fotoPost}/>
+            <img onDoubleClick={gosteiFoto} class="foto" src={props.fotoPost} data-test="post-image"/>
           </div>
           <div class="baixo-feed">
             <div class="icones-feed">
               <div class="icones-esq-feed">
-                <ion-icon onClick={gostei} color={color} name={like}></ion-icon>
+                <ion-icon onClick={gostei} color={color} name={like} data-test="like-post"></ion-icon>
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <ion-icon name="paper-plane-outline"></ion-icon>
               </div>
-              { <ion-icon onClick={salvamento} name={salvarFoto}></ion-icon> }
+              { <ion-icon onClick={salvamento} name={salvarFoto} data-test="save-post"></ion-icon> }
             </div>
             <div class="curtidas">
               <img src={props.fotoCurtida} />
-              <p>
+              <p data-test="likes-number">
                 Curtido por <strong>{props.nomeCurtida}</strong> e&nbsp;
                 <strong>outras {curtidas} pessoas</strong>
               </p>

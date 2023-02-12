@@ -20,11 +20,11 @@ export default function Usuario(){
 
     return (
         <div class="profile">
-            <img onClick={mudancaFoto} class="foto-profile" src={fotoUsuario} />
+            <img onClick={mudancaFoto} class="foto-profile" src={fotoUsuario} data-test="profile-image"/>
             <div class="profile-text">
-                <h1>{nomeUsuario}</h1>
+                <h1 data-test="name">{nomeUsuario}</h1>
             </div>
-            <img onClick={mudancaNome} class="lapis" src="assets/pencil.png" />
+            <img onClick={mudancaNome} class="lapis" src="assets/pencil.png" data-test="edit-name"/>
         </div>
     )
 }
